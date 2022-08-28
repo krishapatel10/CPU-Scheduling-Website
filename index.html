@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>OS Project</title>
+
+    <meta name="description" content="This is our OS project">
+    <meta name="author" content="Veerangi Mehta, Greshi Doshi, Ashwini Ramanuj, Krisha Patel, shruti Jethloja, twinkle Vaswani">
+    <meta name="keywords" content="CPU scheduling algorithms">
+
+    
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+   
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+</head>
+<body>
+
+    <!-- Hero Section, Background Image change in css -->
+    <div id="top" class="hero background-overlay">
+        <!-- Name & Description -->
+        <div class="hero-content">
+            <h1 style="color: #feffff">CPU SCHEDULING</h1>
+            <p class="hero-job" style="color: #feffff"><span>OS PROJECT</span></p>
+        </div><!-- /.hero-content -->
+
+        <div class="hero-arrow page-scroll home-arrow-down">
+            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+        </div><!-- /.hero-arrow -->
+
+    </div><!-- /.hero -->
+    <!-- End Hero -->
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top">OS Project</a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="#top">Home</a></li>
+                        <li class="page-scroll"><a href="#intro">Intro</a></li>
+                        <li class="page-scroll"><a href="#why">About</a></li>
+                        <li class="page-scroll"><a href="#about">Types</a></li>
+                        <li class="page-scroll"><a href="#terms">Terminologies</a></li>
+                        <li class="page-scroll"><a href="#services">Algorithms</a></li>
+                        <li class="page-scroll"><a href="#colophon">Contact Us</a></li>
+                        <li class="page-scroll"><button id="voicerec1" style="margin-left: 20px;"><i class="fa fa-microphone" aria-hidden="true" style="font-size: 20px;"></i></button></li>
+                        
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <main id="main" class="site-main">
+
+        <!-- Hello section -->
+		<section class="site-section section-hello" id="intro" style="background-color: #FEFFFF;">
+			<div class="sec1">
+
+                <center><input type="text" id="input">
+                    <button id="button"><i class="fa fa-search"></i></button>
+                    <button id="voicerec" style="margin-left: 20px;"><i class="fa fa-microphone" aria-hidden="true" style="font-size: 20px;"></i></button>
+
+				    <h2 style="color: #3AAFA9;">CPU SCHEDULING</h2><br><br>
+                </center>
+                <center><p>CPU scheduling is done by switching the CPU processes.<br>
+                    By CPU scheduling, the operating system can make the computer more predictive.<br>
+                    CPU scheduling is also known as 'Process scheduling'.</p>
+                    <img src="assets/img/bgf.png" class="img-responsive" alt=""><br><br><br>
+                </center>			
+			</div>
+		</section><!-- /.section-hello -->
+        <!-- End Hello section -->
+        
+        <!-- The WHY section --> 
+        <section class="section-background section-WHY background-overlay text-center" id="why">
+            <p><b><h1 style="color: #feffff;">Why CPU Scheduling?</h1></b></p>
+                <p style="color: #feffff;">In <b>Multiprogramming systems</b>, the Operating system schedules the process on the CPU to have the maximum utilization of it and this procedure is called<b> CPU scheduling.</b></p><br>
+                <p style="color: #feffff;">The task of Operating system is to optimize the utilization of resources. If most of the running processes change their state from running to waiting then there may always be a possibility of deadlock in the system. Hence to reduce this overhead, the OS needs to schedule the jobs to get the optimal utilization of CPU and to avoid possibility of deadlock.</p><br>
+                <p style="color: #feffff;"><b>Objectives of CPU scheduling algorithms:</b><br>
+                1. Maximize Thoroughput<br>
+                2. Minimize response time<br>
+                3. Minimize turnaround time<br>
+                4. Minimize waiting time<br>
+                5. Maximize CPU efficiency<br>
+                6. Ensure fairness for all jobs</p>
+        </section><!-- /.section-why-->
+        <!-- End Why section --> 
+
+        <!-- About section -->
+        <section class="site-section section-about text-center" id="about" style="background-color: #def2f1;">
+            <div class="container">
+                <h2 style="color: #17252a;">Types of CPU scheduling</h2>
+                <p class="section-subtitle"><span>There are two types of CPU scheduling.</span></p>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="feature-about">
+                            <div class="medium-rectangle rectangle">
+                                <i class="fa fa-sitemap" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3 style="color: #17252a;">Preemptive scheduling</h3>
+                            <p>Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience</p>
+                        </div><!-- /.feature-about -->
+                    </div>                                        
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="feature-about">
+                            <div class="medium-rectangle rectangle">
+                                <i class="fa fa-sitemap" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3 style="color: #17252a;">Non Preemptive scheduling</h3>
+                            <p>The web development process involves taking the graphical elements defined in the design process and coding them into a custom theme.</p>
+                        </div><!-- /.feature-about -->
+                    </div>                    
+                    
+                </div>
+            </div>
+        </section><!-- /.section-about -->
+        <!-- End About section -->     
+        
+        <!--Terminologies-->
+        <section class="section-background section-terms background-overlay text-center" id="terms">
+            <p><b><h1 style="color: #feffff;">Terminologies</h1></b></p><br>
+                <p style="color: #def2f1;">Some of the terminologies used in the algorithm are as follows:</p><br><br>
+
+        <section class="terms terms-clippy terms-rhombus" style="color: #17252a;">
+
+            <ul style="color: #17252a;">
+              <li>
+                <div>
+                  <h3>Burst Time</h3>
+                  <p>The time required by the process to complete execution. It is also called running time.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Turnaround Time</h3>
+                    <p>Turn around time is given by the difference in completion time and arrival time.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                    <h3>Arrival Time</h3>
+                    <p>The time when a process enters in a ready state is called the arrival time.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                    <h3>Waiting Time</h3>
+                    <p>Waiting time is the difference in turnaround time and burst time.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                    <h3>Completition Time</h3>
+                    <p>The time when process gets completed and exits from the system is called its completion time.</p>
+                </div>
+              </li>               
+            </ul>
+          </section>
+        </section>
+
+
+        <!-- Services section -->
+        <section class="site-section section-services" id="services" style="background-color: #17252a;">
+
+            <div class="container-fluid"  style="background-color: #17252a;">
+                <h2 style="color: #feffff;">CPU SCHEDULING ALGORITHMS</h2>
+                <p class="section-subtitle" style="color: #feffff;"><span>Select an algorithm to simulate</span></p>
+            </div>
+
+            <div class="container">
+
+                <div class="carousel slide" id="services-carousel" style="color: #feffff;">
+                    
+                    <div class="carousel-indicators nav-tabs text-center" >
+                        <a data-target="#services-carousel" href="#" data-slide-to="0" class="active">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-code" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">First Come First Serve</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="1">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-tasks aria-hidden="true></i>
+                                    </div>
+                                    <p class="hidden-xs">Shortest Remaining Job First</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="2">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-code-fork" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Round Robin Scheduling</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="3" >
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Shortest Job First</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                    </div><!-- /.carousel-indicators -->
+                        
+                           
+                    <div class="carousel-inner" >
+                        
+                        <!-- Item 1 -->   
+                        <div id="item1" class="item tab-pane active">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">First Come First Serve</h3>
+                                        <p>FCFS provides an efficient, simple and error-free process scheduling algorithm that saves valuable CPU resources. It uses nonpreemptive scheduling in which a process is automatically queued and processing occurs according to an incoming request or process order. FCFS derives its concept from real-life customer service.</p>
+                                            <p><h3><a href="FCFS.HTML" style="color: #feffff;">Learn More <i class="fa fa-angle-double-right"></i></a></h3></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/bgf.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 2 -->   
+                        <div id="item2" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Shortest Remaining Job First</h3>
+                                        <p>The Shortest Remaining Job First (SRJF) is the preemptive version of SJF scheduling. In this scheduling algorithm, the process with the smallest amount of time remaining until completion is selected to execute. Processes having same arrival time will convert SRTF to SJF. </p>
+
+                                        <p>While a good design can impress the users, it is the codes and development process that ensures 
+                                            that your target users will find the browsing experience equally amazing as your design. </p>
+
+                                            <p><h3><a href="SRTF.HTML" style="color: #feffff;">Learn More <i class="fa fa-angle-double-right"></i></a></h3></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/bgf.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 3 -->   
+                        <div id="item3" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Round Robin Scheduling</h3>
+                                        <p>Round Robin is the preemptive process scheduling algorithm. Each process is provided a fix time to execute, it is called a quantum.
+                                            
+                                            Once a process is executed for a given time period, it is preempted and other process executes for a given time period.
+                                            
+                                            Context switching is used to save states of preempted processes.</p>    
+                                            
+                                            <p><h3><a href="RRS.HTML" style="color: #feffff;">Learn More <i class="fa fa-angle-double-right"></i></a></h3></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/bgf.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 4 -->   
+                        <div id="item4" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Shortest Job First</h3>
+                                        <p>The Shortest Job First (SJF) is a scheduling policy that selects the waiting process with the smallest execution time to execute next. It is also known as Shortest Job Next (SJN) or Shortest Process Next (SPN). It is a non-preemptive scheduling algorithm.</p>
+
+                                            <p><h3><a href="SJF.HTML" style="color: #feffff;">Learn More <i class="fa fa-angle-double-right"></i></a></h3></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/bgf.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->                        
+                    </div><!-- /.carousel-inner -->
+                </div><!-- /.carousel -->
+            </div><br><br><br>
+        </section><!-- /.section-services -->
+        <!-- End Services section -->       
+    </main><!-- /#main -->
+    <!-- End Main content -->
+
+    <!-- Footer --> 
+    <footer id="colophon" class="site-footer" style="background-color: #feffff;">
+            <div style = "color: #17252a"class="contact">
+                <center>
+                    <h1>CONTACT US</h1><br><br>
+
+                    <ul style="display: inline-block;">
+                        <li>
+                            Veerangi Mehta<br>
+                            Roll No.: 20BCP003<br>
+                            E-mail ID: veerangi.mce20@sot.pdpu.ac.in<br> 
+                        </li><br>
+                        <li>
+                            Greshi Doshi<br>
+                            Roll No.: 20BCP030<br>
+                            E-mail ID: greshi.dce20@sot.pdpu.ac.in<br> 
+                        </li><br>
+                        <li>
+                            Ashwini Ramanuj<br>
+                            Roll No.: 20BCP020<br>
+                            E-mail ID: ashwini.rce20@sot.pdpu.ac.in<br> 
+                        </li>
+                    </ul>
+                    <ul style="display: inline-block;">
+                        <li>
+                            Twinkle Vaswani<br>
+                            Roll No.: 20BCP026<br>
+                            E-mail ID: twinkle.vce20@sot.pdpu.ac.in<br> 
+                        </li><br>
+                        <li>
+                            Shruti Jethloja<br>
+                            Roll No.: 20BCP013<br>
+                            E-mail ID: shruti.jce20@sot.pdpu.ac.in<br> 
+                        </li><br>
+                        <li>
+                            Krisha Patel<br>
+                            Roll No.: 20BCP006<br>
+                            E-mail ID: krisha.pce20@sot.pdpu.ac.in<br> 
+                        </li>
+                    </ul>
+            </div><br><br><br>
+        </div>
+    </div>
+            
+        <div class="container-fluid">
+
+            <ul class="list-unstyled list-inline">
+                <li class="page-scroll"><a href="../index.HTML">Home</a></li>
+                        <li class="page-scroll"><a href="#intro">Intro</a></li>
+                        <li class="page-scroll"><a href="#why">About</a></li>
+                        <li class="page-scroll"><a href="#about">Types</a></li>
+                        <li class="page-scroll"><a href="#terms">Terminologies</a></li>
+                        <li class="page-scroll"><a href="#services">Algorithms</a></li>
+                        <li class="page-scroll"><a href="#colophon">Contact Us</a></li>
+            </ul>
+
+            <div class="page-scroll">
+                <a href="#top" class="rectangle">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container text-center">
+            <p class="copyright">Back to Top</p>
+        </div>
+
+    </footer><!-- /#footer -->
+    <!-- End Footer --> 
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/terminologies.js"></script>
+    <script src="SearchEng.js"></script>
+  
+</body>
+</html>

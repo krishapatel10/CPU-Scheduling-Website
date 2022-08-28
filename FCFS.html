@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>First Come First Serve Algorithm</title>
+
+    <meta name="description" content="This is our OS project">
+    <meta name="author" content="Veerangi Mehta, Greshi Doshi, Ashwini Ramanuj, Krisha Patel, shruti Jethloja, twinkle Vaswani">
+    <meta name="keywords" content="CPU scheduling algorithms">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+    
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        table {
+          border-collapse: separate;
+          border-spacing: 0 15px;
+        }
+        th {
+          background-color: #3aafa9;
+          color: white;
+        }
+        th,
+        td {
+          width: 150px;
+          text-align: center;
+          border: 1px solid black;
+          padding: 5px;
+        }
+        h2 {
+          color: #4287f5;
+        }
+      </style>
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div style = "color: #3aafa9;" class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top", style="color: #feffff">CPU SCHEDULING</a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div style = "color: #17252a;",class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="index.html">Home</a></li>
+                        <li class="page-scroll"><a href="#intro">Intro</a></li>
+                        <li class="page-scroll"><a href="#why">Example</a></li>
+                        <li class="page-scroll"><a href="#colophon">Our Team</a></li>
+                        <li class="page-scroll"><button id="voicerec" style="margin-left: 20px;"><i class="fa fa-microphone" aria-hidden="true" style="font-size: 20px;"></i></button></li>
+                        
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <main id="main" class="site-main">
+
+        <!-- Hello section -->
+		<section class="site-section section-hello" id="intro" style="background-color: #feffff;">
+            <center><input type="text" id="input">
+              <button id="button"><i class="fa fa-search"></i></button>
+              <button id="voicerec" ><i class="fa fa-microphone" aria-hidden="true"></i></button></center><br><br>
+			<div class="sec1"  style="padding-left: 70px; padding-right: 70px;">
+				<h2 style="color: #172521;"><strong>FIRST COME FIRST SERVE ALGORITHM</strong></h2><br><br>
+                
+                <center><p>FCFS provides an efficient, simple and error-free process scheduling algorithm that saves valuable CPU resources. It uses nonpreemptive scheduling in which a process is automatically queued and processing occurs according to an incoming request or process order. FCFS derives its concept from real-life customer service.</p><br><br>
+                <p><b>
+                    First-come-first-served (FCFS )</center></b><br></p>
+                <p> ➢A READY queue for storing ready processes that are initialised by Job scheduler.<br>
+                    ➢When a process is in RUNNING state, its 
+                    execution will be completed in one go, that is,
+                    these is no waiting state in this algorithm.<br>
+                    ➢ Only Arrival Time is taken into account.<br>
+                    ➢Average turnaround time (τ ) is normally huge here.<br>
+                    ➢Total time needed for every process completed divided by the number of processes in the
+                    queue.<br>
+                    ➢Depends on how the processes are queued in the READY queue.<br>
+                    ➢ Suffers from the problem of “Convey Effect<br>
+                </p>	
+                
+                <p><br><br>
+                    Suppose there are three processes in a queue: P1, P2 and P3. P1 is placed in the processing register with a waiting time of zero seconds and 10 seconds for complete processing. The next process, P2, must wait 10 seconds and is placed in the processing cycle until P1 is processed. Assuming that P2 will take 15 seconds to complete, the final process, P3, must wait 25 seconds to be processed. FCFS may not be the fastest process scheduling algorithm, as it does not check for priorities associated with processes. These priorities may depend on the processes' individual execution times.
+
+                </p><br>
+                <center><img src="assets/img/bgf.png" class="img-responsive" alt=""><br><br><br></center>
+            
+                </section>
+
+                <section class="site-section section-about text-center" id="about" style="background-color: #feffff;"></section>
+                <section class="site-section section-hello" id="why" style="background-color: #feffff;">
+    
+                <center>
+                   
+                        <br><br><h1 style="color: #17252a;">EXAMPLE OF FCFS</h1><BR><BR>
+            
+    <div>
+                    <table id="FCFST">
+                        <tr>
+                          <th>PROCESS</th>
+                          <th>BURST TIME</th>
+                        </tr>
+                        
+                        <tr>
+                          <td>P1</td>
+                          <td>24</td>
+                      </tr>
+                      <tr>
+                          <td>P2</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>P3</td>
+                          <td>3</td>
+                      </tr>
+                      </table><br><br>
+                  
+                    <h4>The Gantt Chart of the above example is:</h4><br>
+
+                  <img src="assets/img/fcfst.png" style="width: 500PX;"><br><br>
+
+                  <p>
+                    Turn around time<br>
+                    =(24+27+30)/3 <br>
+                    =27
+                    <br><br>
+                    Average waiting time<br>
+                    =(0+24+27)/3<br>
+                    =17
+                    </p><br><br>
+
+                    <h4>To stimulate the algorithm:</h4>
+                    <h1 style="color: #3aafa9;"><a href="CPU_algo1.HTML"> SIMULATE <i class="fa fa-angle-double-right"></i> </a></h1>
+
+			</CENTER></div>
+		</section><!-- /.section-hello -->
+        <!-- End Hello section -->
+        
+        
+            </main><!-- /#main -->
+    <!-- End Main content -->
+
+    <!-- Footer --> 
+    <footer id="colophon" class="site-footer" style="background-color: #feffff">
+        <div class="container-fluid">
+
+            <ul class="list-unstyled list-inline">
+                <li class="page-scroll"><a href="../index.HTML">Home</a></li>
+                        <li class="page-scroll"><a href="#intro">Intro</a></li>
+                        <li class="page-scroll"><a href="#why">Example</a></li>
+            </ul>
+
+            <div class="page-scroll">
+                <a href="#top" class="rectangle">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container text-center">
+            <p class="copyright">Back to Top</p>
+        </div>
+
+    </footer><!-- /#footer -->
+    <!-- End Footer --> 
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+    <script src="SearchEng.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 
+#particles-js {
+  height: 100vh;
+  background-image: url('https://img.freepik.com/free-photo/abstract-luxury-light-cream-beige-brown-like-cotton-silk-texture-pattern-background_1258-54316.jpg?size=626&ext=jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.navbar-brand:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+} */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #3aafa9;
+  color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+ }
+ .nav-links a {
+  color: #feffff;
+ }
+ 
+ /* LOGO */
+ .logo {
+  font-size: 32px;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+ }
+ .menu li:hover {
+  background-color: black;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 5px 14px;
+ }
+
+ 
+ 
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+ } 
+ 
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+.title {
+  position: absolute;
+  top: 40%;
+  left: 14%;
+  color: #fff;
+}
+
+.title h1 {
+  font-size: 3rem;
+  font-family: 'Valera', sans-serif;
+}
+
+.page-title {
+  font-size: 3rem;
+  padding-bottom: 4%;
+}
+
+label {
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+
+.title h1:hover {
+  color: #007cba;
+  transition: color 0.2s;
+}
+
+
+.btn {
+  position: absolute;
+  left: 10%;
+}
+

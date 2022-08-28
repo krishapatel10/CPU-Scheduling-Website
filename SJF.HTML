@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Shortest Job First Algorithm</title>
+
+    <meta name="description" content="This is our OS project">
+    <meta name="author" content="Veerangi Mehta, Greshi Doshi, Ashwini Ramanuj, Krisha Patel, shruti Jethloja, twinkle Vaswani">
+    <meta name="keywords" content="CPU scheduling algorithms">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+    
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        table {
+          border-collapse: separate;
+          border-spacing: 0 15px;
+        }
+        th {
+          background-color: #3aafa9;
+          color: white;
+        }
+        th,
+        td {
+          width: 150px;
+          text-align: center;
+          border: 1px solid black;
+          padding: 5px;
+        }
+        h2 {
+          color: #4287f5;
+        }
+      </style>
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top">CPU SCHEDULING</a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="../OS PROJECT/index.HTML">Home</a></li>
+                        <li class="page-scroll"><a href="#intro">Intro</a></li>
+                        <li class="page-scroll"><a href="#why">Example</a></li>
+                        <li class="page-scroll"><button id="voicerec" style="margin-left: 20px;"><i class="fa fa-microphone" aria-hidden="true" style="font-size: 20px;"></i></button></li>
+                        
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <main id="main" class="site-main">
+
+        <!-- Hello section -->
+		<section class="site-section section-hello" id="intro" style="background-color: #feffff;">
+            <center><input type="text" id="input">
+                <button id="button"><i class="fa fa-search"></i></button>
+                <button id="voicerec" ><i class="fa fa-microphone" aria-hidden="true"></i></button></center><br><br>
+			<div class="sec1"  style="padding-left: 70px; padding-right: 70px;">
+				<h2 style="color: #17252a;"><strong>SHORTEST JOB FIRST ALGORITHM</strong></h2><br><br>
+                
+                <center><p>The Shortest Job First (SJF) is a scheduling policy that selects the waiting process with the 
+                    smallest execution time to execute next. It is also known as Shortest Job Next (SJN) or 
+                    Shortest Process Next (SPN). It is a non-preemptive scheduling algorithm.</p><br><br>
+                <p><b>
+                    Shortest Job First (SJF)</center></b><br></p>
+                <p> ➢It is associated with each job as a unit of time to complete.<br>
+                    ➢This algorithm method is helpful for batch-type processing, where waiting for jobs to complete is not critical.<br>
+                    ➢It can improve process throughput by making sure that shorter jobs are executed first, hence possibly have a short turnaround time.<br>
+                    ➢It improves job output by offering shorter jobs, which should be executed first, which mostly have a shorter turnaround time<br>
+                    
+                </p>	
+                
+                <CENTER><p><br><br>
+                    Suppose there are three processes in a queue: P1, P2 and P3.All these three processes are sorted according to
+                     arrival time then  process with lowest arrival time will get executed first.For later processes burst time will 
+                     be sorted and the process with lowest burst time  and with arrival time less than completion time of previous 
+                     process will be given the CPU first.
+
+                </p><br>
+                <img src="assets/img/bgf.png" class="img-responsive" alt=""><br><br><br>
+            </CENTER>
+                </section>
+
+                <section class="site-section section-about text-center" id="about" style="background-color: #feffff;"></section>
+                <section class="site-section section-hello" id="why" style="background-color: #feffff;">
+    
+                <center>
+                   
+                        <br><br><h1 style="color: #feffff;">EXAMPLE OF FCFS</h1><BR><BR>
+            
+    <div class="e1">
+                    <table id="FCFST">
+                        <tr>
+                          <th>PROCESS</th>
+                          <th>ARRIVAL TIME</th>
+                          <th>BURST TIME</th>
+                        </tr>
+                        
+                        <tr>
+                          <td>P1</td>
+                          <td>0.0</td>
+                          <td>7</td>
+                      </tr>
+                      <tr>
+                          <td>P2</td>
+                          <td>2.0</td>
+                          <td>4</td>
+                      </tr>
+                      <tr>
+                          <td>P3</td>
+                          <td>4.0</td>
+                          <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>P4</td>
+                        <td>5.0</td>
+                        <td>4</td>
+                    </tr>
+                      </table><br><br>
+    </div>
+    <div class="e2">
+                  
+                    <h4>The Gantt Chart of the given example is:</h4><br>
+
+                  <img src="assets/img/sjf.jpeg" style="width: 500PX;"><br><br>
+
+                </div>
+                <div class="e3" style="margin-left: 150px;">
+                    
+                    <p>
+                    Turn around time<br>
+                    =(24+27+30)/3 <br>
+                    =27
+                    <br></p><br><br>
+                </div>
+                <div class="e4" style="margin-top: 120px;">
+                    
+                    <h4><b>To simulate the algorithm:</b></h4>
+                    <h1><a href="CPU_algo2.HTML" style="color: #17252a;"> SIMULATE <i class="fa fa-angle-double-right"></i> </a></h1>
+
+			</CENTER></div>
+		</section><!-- /.section-hello -->
+        <!-- End Hello section -->
+        
+        
+            </main><!-- /#main -->
+    <!-- End Main content -->
+
+    <!-- Footer --> 
+    <footer id="colophon" class="site-footer" style="background-color: #feffff">
+        <div class="container-fluid">
+
+            <ul class="list-unstyled list-inline">
+                <li class="page-scroll"><a href="../index.HTML">Home</a></li>
+                        <li class="page-scroll"><a href="#intro">Intro</a></li>
+                        <li class="page-scroll"><a href="#why">Example</a></li>
+            </ul>
+
+            <div class="page-scroll">
+                <a href="#top" class="rectangle">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container text-center">
+            <p class="copyright">Back to Top</p>
+        </div>
+
+    </footer><!-- /#footer -->
+    <!-- End Footer --> 
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+    <script src="SearchEng.js"></script>
+
+</body>
+</html>
